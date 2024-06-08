@@ -61,6 +61,12 @@ function App() {
         previousPageUrl={previousPageUrl}
         nextPageUrl={nextPageUrl}
       />
+
+      {/* //* AS SEEN IN VIDEO BUT DOESN'T WORK (MINE WORKS) */}
+      {/* <Pagination
+        prevPage={prevPage ? prevPage : null}
+        nextPage={nextPage ? nextPage : null}
+      /> */}
     </>
   );
 }
