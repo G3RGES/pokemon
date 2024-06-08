@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 import axios from "axios";
 import PokemonList from "./components/PokemonList";
+import Pagination from "./components/Pagination";
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
@@ -54,6 +55,7 @@ function App() {
   return (
     <>
       <PokemonList pokemon={pokemon} />
+      <Pagination prevPage={prevPage} nextPage={nextPage} />
     </>
   );
 }
